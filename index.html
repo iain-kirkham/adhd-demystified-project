@@ -78,14 +78,14 @@
         <ul class="nav nav-tabs" role="tablist" aria-label="ADHD types">
           <li class="nav-item" role="presentation">
             <button
-              class="nav-link active"
+              class="nav-link"
               id="tab-hyperactive"
               data-bs-toggle="tab"
               data-bs-target="#panel-hyperactive"
               type="button"
               role="tab"
               aria-controls="panel-hyperactive"
-              aria-selected="true"
+              aria-selected="false"
             >
               Hyperactive
             </button>
@@ -106,14 +106,14 @@
           </li>
           <li class="nav-item" role="presentation">
             <button
-              class="nav-link"
+              class="nav-link active"
               id="tab-combined"
               data-bs-toggle="tab"
               data-bs-target="#panel-comb"
               type="button"
               role="tab"
               aria-controls="panel-comb"
-              aria-selected="false"
+              aria-selected="true"
             >
               Combined
             </button>
@@ -123,20 +123,26 @@
         <div class="tab-content">
           <div
             id="panel-hyperactive"
-            class="tab-pane fade show active"
+            class="tab-pane fade"
             role="tabpanel"
             aria-labelledby="tab-hyperactive"
           >
-            <div class="card-grid row">
-              <article class="card col-12 col-md-6 col-lg-4">
-                <div class="card-body">
+            <div class="card-grid row gap-4 justify-content-center">
+              <div class="col-12">
+                <h3 class="group-title">Hyperactive / Impulsive symptoms</h3>
+                <p class="small text-muted">
+                  Common signs related to hyperactivity and impulsivity.
+                </p>
+              </div>
+              <article class="card col-12 col-md-6 col-lg-3">
+                <div class="card-body m-2">
                   <h3 class="h5">
                     Often fidgets with or taps hands or feet, or squirms in
                     seat.
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often leaves seat in situations when remaining seated is
@@ -144,7 +150,7 @@
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often runs about or climbs in situations where it is not
@@ -153,7 +159,7 @@
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often unable to play or take part in leisure activities
@@ -161,19 +167,19 @@
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Is often “on the go” acting as if “driven by a motor”.
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">Often talks excessively.</h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often blurts out an answer before a question has been
@@ -181,12 +187,12 @@
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">Often has trouble waiting their turn.</h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often interrupts or intrudes on others (e.g. butts into
@@ -203,8 +209,15 @@
             role="tabpanel"
             aria-labelledby="tab-inattentive"
           >
-            <div class="card-grid row">
-              <article class="card col-12 col-md-6 col-lg-4">
+            <div class="card-grid row gap-4 justify-content-center">
+              <div class="col-12">
+                <h3 class="group-title">Inattentive symptoms</h3>
+                <p class="small text-muted">
+                  Common signs related to inattention and difficulty sustaining
+                  focus.
+                </p>
+              </div>
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often fails to give close attention to details or makes
@@ -213,7 +226,7 @@
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often has trouble holding attention on tasks or play
@@ -221,14 +234,14 @@
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often does not seem to listen when spoken to directly.
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often does not follow through on instructions and fails to
@@ -237,14 +250,14 @@
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often has trouble organising tasks and activities.
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often avoids, dislikes, or is reluctant to do tasks that
@@ -253,7 +266,7 @@
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often loses things necessary for tasks and activities (e.g.
@@ -262,12 +275,12 @@
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">Is often easily distracted</h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">Is often forgetful in daily activities.</h3>
                 </div>
@@ -277,13 +290,19 @@
 
           <div
             id="panel-comb"
-            class="tab-pane fade"
+            class="tab-pane fade show active"
             role="tabpanel"
             aria-labelledby="tab-comb"
           >
-            <div class="card-grid row">
+            <div class="card-grid row gap-4 justify-content-center">
+              <div class="col-12">
+                <h3 class="group-title">Hyperactive / Impulsive symptoms</h3>
+                <p class="small text-muted">
+                  Common signs related to hyperactivity and impulsivity.
+                </p>
+              </div>
               <!-- Combined: Hyperactive + Inattentive symptoms -->
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often fidgets with or taps hands or feet, or squirms in
@@ -291,7 +310,7 @@
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often leaves seat in situations when remaining seated is
@@ -299,7 +318,7 @@
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often runs about or climbs in situations where it is not
@@ -308,7 +327,7 @@
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often unable to play or take part in leisure activities
@@ -316,19 +335,19 @@
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Is often “on the go” acting as if “driven by a motor”.
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">Often talks excessively.</h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often blurts out an answer before a question has been
@@ -336,12 +355,12 @@
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">Often has trouble waiting their turn.</h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often interrupts or intrudes on others (e.g. butts into
@@ -350,7 +369,7 @@
                 </div>
               </article>
 
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often fails to give close attention to details or makes
@@ -359,7 +378,7 @@
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often has trouble holding attention on tasks or play
@@ -367,14 +386,14 @@
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often does not seem to listen when spoken to directly.
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often does not follow through on instructions and fails to
@@ -383,14 +402,14 @@
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often has trouble organising tasks and activities.
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often avoids, dislikes, or is reluctant to do tasks that
@@ -399,7 +418,7 @@
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">
                     Often loses things necessary for tasks and activities (e.g.
@@ -408,12 +427,12 @@
                   </h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">Is often easily distracted</h3>
                 </div>
               </article>
-              <article class="card col-12 col-md-6 col-lg-4">
+              <article class="card col-12 col-md-6 col-lg-3">
                 <div class="card-body">
                   <h3 class="h5">Is often forgetful in daily activities.</h3>
                 </div>
@@ -428,14 +447,14 @@
         <p class="lede">
           Think you might have ADHD? Find out how to get a diagnosis.
         </p>
-        <div class="card-row row">
-          <div class="col-12 col-md-4">
+        <div class="card-row row g-3">
+          <div class="col-12 col-md-4 col-lg-3">
             <div class="card small-card text-center p-3">Self check</div>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 col-lg-3">
             <div class="card small-card text-center p-3">Decide pathway</div>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 col-lg-3">
             <div class="card small-card text-center p-3">Get diagnosis</div>
           </div>
         </div>
