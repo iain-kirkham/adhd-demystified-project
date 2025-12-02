@@ -28,31 +28,45 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container header-inner">
+    <nav class="navbar navbar-expand-md site-header">
+      <div class="container">
+        <a class="navbar-brand site-logo" href="#">ADHD Demystified</a>
         <button
-          class="menu-toggle"
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
           aria-controls="main-nav"
           aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <i class="fa-solid fa-bars"></i>
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <a href="#" class="site-logo">ADHD Demystified</a>
-        <nav id="main-nav" class="main-nav" aria-label="Navigation">
-          <ul class="nav-list">
-            <li><a href="#types">ADHD types</a></li>
-            <li><a href="#diagnosis">Diagnosis</a></li>
-            <li><a href="#resources">Resources</a></li>
-            <li><a href="#contact">Contact</a></li>
+
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#types">ADHD types</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#diagnosis">Diagnosis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resources">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
           </ul>
-        </nav>
+        </div>
       </div>
-    </header>
+    </nav>
 
     <main>
       <section id="hero" class="hero container">
         <h1>ADHD Demystified</h1>
         <p class="subtitle">ADHD affects many people. Read more below.</p>
+        <!-- Hero uses CSS background: assets/images/hero-forest.jpg -->
       </section>
 
       <section id="types" class="types container">
@@ -92,18 +106,24 @@
           role="tabpanel"
           aria-labelledby="tab-hyperactive"
         >
-          <div class="card-grid">
-            <article class="card">
-              <h3>Symptom</h3>
-              <p>Info</p>
+          <div class="card-grid row">
+            <article class="card col-12 col-md-6 col-lg-4">
+              <div class="card-body">
+                <h3 class="h5">Symptom</h3>
+                <p>Info</p>
+              </div>
             </article>
-            <article class="card">
-              <h3>Symptom</h3>
-              <p>Info</p>
+            <article class="card col-12 col-md-6 col-lg-4">
+              <div class="card-body">
+                <h3 class="h5">Symptom</h3>
+                <p>Info</p>
+              </div>
             </article>
-            <article class="card">
-              <h3>Symptom</h3>
-              <p>Info</p>
+            <article class="card col-12 col-md-6 col-lg-4">
+              <div class="card-body">
+                <h3 class="h5">Symptom</h3>
+                <p>Info</p>
+              </div>
             </article>
           </div>
         </div>
@@ -115,18 +135,24 @@
           aria-labelledby="tab-inattentive"
           hidden
         >
-          <div class="card-grid">
-            <article class="card">
-              <h3>Symptom</h3>
-              <p>Info</p>
+          <div class="card-grid row">
+            <article class="card col-12 col-md-6 col-lg-4">
+              <div class="card-body">
+                <h3 class="h5">Symptom</h3>
+                <p>Info</p>
+              </div>
             </article>
-            <article class="card">
-              <h3>Symptom</h3>
-              <p>Info</p>
+            <article class="card col-12 col-md-6 col-lg-4">
+              <div class="card-body">
+                <h3 class="h5">Symptom</h3>
+                <p>Info</p>
+              </div>
             </article>
-            <article class="card">
-              <h3>Symptom</h3>
-              <p>Info</p>
+            <article class="card col-12 col-md-6 col-lg-4">
+              <div class="card-body">
+                <h3 class="h5">Symptom</h3>
+                <p>Info</p>
+              </div>
             </article>
           </div>
         </div>
@@ -138,18 +164,24 @@
           aria-labelledby="tab-comb"
           hidden
         >
-          <div class="card-grid">
-            <article class="card">
-              <h3>Symptom</h3>
-              <p>Info</p>
+          <div class="card-grid row">
+            <article class="card col-12 col-md-6 col-lg-4">
+              <div class="card-body">
+                <h3 class="h5">Symptom</h3>
+                <p>Info</p>
+              </div>
             </article>
-            <article class="card">
-              <h3>Symptom</h3>
-              <p>Info</p>
+            <article class="card col-12 col-md-6 col-lg-4">
+              <div class="card-body">
+                <h3 class="h5">Symptom</h3>
+                <p>Info</p>
+              </div>
             </article>
-            <article class="card">
-              <h3>Symptom</h3>
-              <p>Info</p>
+            <article class="card col-12 col-md-6 col-lg-4">
+              <div class="card-body">
+                <h3 class="h5">Symptom</h3>
+                <p>Info</p>
+              </div>
             </article>
           </div>
         </div>
@@ -160,42 +192,53 @@
         <p class="lede">
           Think you might have ADHD? Find out how to get a diagnosis.
         </p>
-        <div class="card-row">
-          <div class="card small-card">Self check</div>
-          <div class="card small-card">Decide pathway</div>
-          <div class="card small-card">Get diagnosis</div>
+        <div class="card-row row">
+          <div class="col-12 col-md-4">
+            <div class="card small-card text-center p-3">Self check</div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card small-card text-center p-3">Decide pathway</div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card small-card text-center p-3">Get diagnosis</div>
+          </div>
         </div>
       </section>
 
       <section id="resources" class="resources container">
         <h2>Resources</h2>
-        <div class="links-grid">
-          <a href="#">Info link</a>
-          <a href="#">Info link</a>
-          <a href="#">Info link</a>
-          <a href="#">Info link</a>
-          <a href="#">Info link</a>
-          <a href="#">Info link</a>
+        <div class="links-grid row">
+          <div class="col-6 col-md-4"><a href="#">Info link</a></div>
+          <div class="col-6 col-md-4"><a href="#">Info link</a></div>
+          <div class="col-6 col-md-4"><a href="#">Info link</a></div>
+          <div class="col-6 col-md-4"><a href="#">Info link</a></div>
+          <div class="col-6 col-md-4"><a href="#">Info link</a></div>
+          <div class="col-6 col-md-4"><a href="#">Info link</a></div>
         </div>
       </section>
 
       <section id="contact" class="contact container">
         <h2>Contact us</h2>
         <form id="contact-form" novalidate>
-          <div class="form-row">
+          <div class="form-row mb-3">
             <label for="name">Name</label>
-            <input id="name" name="name" type="text" />
+            <input id="name" name="name" type="text" class="form-control" />
           </div>
-          <div class="form-row">
+          <div class="form-row mb-3">
             <label for="email">Email</label>
-            <input id="email" name="email" type="email" />
+            <input id="email" name="email" type="email" class="form-control" />
           </div>
-          <div class="form-row">
+          <div class="form-row mb-3">
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6"></textarea>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              class="form-control"
+            ></textarea>
           </div>
           <div class="form-row">
-            <button type="submit" class="btn">Submit</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </form>
       </section>
@@ -203,10 +246,16 @@
 
     <footer class="site-footer">
       <div class="container">
-        <div class="footer-inner">
+        <div class="d-flex align-items-center justify-content-between gap-3">
           <div class="social">
             <a href="#" aria-label="Facebook"
               ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="BlueSky"
+              ><i class="fa-brands fa-bluesky"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
             ></a>
           </div>
           <small>&copy; <span id="year">2025</span> ADHD Demystified</small>
