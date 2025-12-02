@@ -4,24 +4,216 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ADHD Demystified</title>
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Preconnect for Google Fonts (loads fonts faster) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Nunito+Sans:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
-    <!--  Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <h1>ADHD Demystified</h1>
-    <footer><i class="fa-brands fa-facebook-f"></i></footer>
+    <header class="site-header">
+      <div class="container header-inner">
+        <button
+          class="menu-toggle"
+          aria-controls="main-nav"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a href="#" class="site-logo">ADHD Demystified</a>
+        <nav id="main-nav" class="main-nav" aria-label="Navigation">
+          <ul class="nav-list">
+            <li><a href="#types">ADHD types</a></li>
+            <li><a href="#diagnosis">Diagnosis</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero container">
+        <h1>ADHD Demystified</h1>
+        <p class="subtitle">ADHD affects many people. Read more below.</p>
+      </section>
+
+      <section id="types" class="types container">
+        <h2>ADHD types</h2>
+        <p class="lede">Brief text about ADHD and how it's split into types</p>
+
+        <div class="tabs" role="tablist" aria-label="ADHD types">
+          <button
+            id="tab-hyperactive"
+            role="tab"
+            aria-selected="true"
+            aria-controls="panel-hyperactive"
+          >
+            Hyperactive
+          </button>
+          <button
+            id="tab-inatt"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-inattentive"
+          >
+            Inattentive
+          </button>
+          <button
+            id="tab-combined"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-comb"
+          >
+            Combined
+          </button>
+        </div>
+
+        <div
+          id="panel-hyperactive"
+          class="tab-panel"
+          role="tabpanel"
+          aria-labelledby="tab-hyperactive"
+        >
+          <div class="card-grid">
+            <article class="card">
+              <h3>Symptom</h3>
+              <p>Info</p>
+            </article>
+            <article class="card">
+              <h3>Symptom</h3>
+              <p>Info</p>
+            </article>
+            <article class="card">
+              <h3>Symptom</h3>
+              <p>Info</p>
+            </article>
+          </div>
+        </div>
+
+        <div
+          id="panel-inattentive"
+          class="tab-panel"
+          role="tabpanel"
+          aria-labelledby="tab-inattentive"
+          hidden
+        >
+          <div class="card-grid">
+            <article class="card">
+              <h3>Symptom</h3>
+              <p>Info</p>
+            </article>
+            <article class="card">
+              <h3>Symptom</h3>
+              <p>Info</p>
+            </article>
+            <article class="card">
+              <h3>Symptom</h3>
+              <p>Info</p>
+            </article>
+          </div>
+        </div>
+
+        <div
+          id="panel-combined"
+          class="tab-panel"
+          role="tabpanel"
+          aria-labelledby="tab-comb"
+          hidden
+        >
+          <div class="card-grid">
+            <article class="card">
+              <h3>Symptom</h3>
+              <p>Info</p>
+            </article>
+            <article class="card">
+              <h3>Symptom</h3>
+              <p>Info</p>
+            </article>
+            <article class="card">
+              <h3>Symptom</h3>
+              <p>Info</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="diagnosis" class="diagnosis container">
+        <h2>Diagnosis</h2>
+        <p class="lede">
+          Think you might have ADHD? Find out how to get a diagnosis.
+        </p>
+        <div class="card-row">
+          <div class="card small-card">Self check</div>
+          <div class="card small-card">Decide pathway</div>
+          <div class="card small-card">Get diagnosis</div>
+        </div>
+      </section>
+
+      <section id="resources" class="resources container">
+        <h2>Resources</h2>
+        <div class="links-grid">
+          <a href="#">Info link</a>
+          <a href="#">Info link</a>
+          <a href="#">Info link</a>
+          <a href="#">Info link</a>
+          <a href="#">Info link</a>
+          <a href="#">Info link</a>
+        </div>
+      </section>
+
+      <section id="contact" class="contact container">
+        <h2>Contact us</h2>
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6"></textarea>
+          </div>
+          <div class="form-row">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="social">
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </div>
+          <small>&copy; <span id="year">2025</span> ADHD Demystified</small>
+        </div>
+      </div>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
