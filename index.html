@@ -63,126 +63,362 @@
     </nav>
 
     <main>
-      <section id="hero" class="hero container">
+      <section
+        id="hero"
+        class="hero d-flex container-fluid justify-content-center align-items-center"
+      >
         <h1>ADHD Demystified</h1>
         <p class="subtitle">ADHD affects many people. Read more below.</p>
-        <!-- Hero uses CSS background: assets/images/hero-forest.jpg -->
       </section>
 
       <section id="types" class="types container">
         <h2>ADHD types</h2>
         <p class="lede">Brief text about ADHD and how it's split into types</p>
 
-        <div class="tabs" role="tablist" aria-label="ADHD types">
-          <button
-            id="tab-hyperactive"
-            role="tab"
-            aria-selected="true"
-            aria-controls="panel-hyperactive"
-          >
-            Hyperactive
-          </button>
-          <button
-            id="tab-inatt"
-            role="tab"
-            aria-selected="false"
-            aria-controls="panel-inattentive"
-          >
-            Inattentive
-          </button>
-          <button
-            id="tab-combined"
-            role="tab"
-            aria-selected="false"
-            aria-controls="panel-comb"
-          >
-            Combined
-          </button>
-        </div>
+        <ul class="nav nav-tabs" role="tablist" aria-label="ADHD types">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="tab-hyperactive"
+              data-bs-toggle="tab"
+              data-bs-target="#panel-hyperactive"
+              type="button"
+              role="tab"
+              aria-controls="panel-hyperactive"
+              aria-selected="true"
+            >
+              Hyperactive
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="tab-inatt"
+              data-bs-toggle="tab"
+              data-bs-target="#panel-inattentive"
+              type="button"
+              role="tab"
+              aria-controls="panel-inattentive"
+              aria-selected="false"
+            >
+              Inattentive
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="tab-combined"
+              data-bs-toggle="tab"
+              data-bs-target="#panel-comb"
+              type="button"
+              role="tab"
+              aria-controls="panel-comb"
+              aria-selected="false"
+            >
+              Combined
+            </button>
+          </li>
+        </ul>
 
-        <div
-          id="panel-hyperactive"
-          class="tab-panel"
-          role="tabpanel"
-          aria-labelledby="tab-hyperactive"
-        >
-          <div class="card-grid row">
-            <article class="card col-12 col-md-6 col-lg-4">
-              <div class="card-body">
-                <h3 class="h5">Symptom</h3>
-                <p>Info</p>
-              </div>
-            </article>
-            <article class="card col-12 col-md-6 col-lg-4">
-              <div class="card-body">
-                <h3 class="h5">Symptom</h3>
-                <p>Info</p>
-              </div>
-            </article>
-            <article class="card col-12 col-md-6 col-lg-4">
-              <div class="card-body">
-                <h3 class="h5">Symptom</h3>
-                <p>Info</p>
-              </div>
-            </article>
+        <div class="tab-content">
+          <div
+            id="panel-hyperactive"
+            class="tab-pane fade show active"
+            role="tabpanel"
+            aria-labelledby="tab-hyperactive"
+          >
+            <div class="card-grid row">
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often fidgets with or taps hands or feet, or squirms in
+                    seat.
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often leaves seat in situations when remaining seated is
+                    expected.
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often runs about or climbs in situations where it is not
+                    appropriate (adolescents or adults may be limited to feeling
+                    restless).
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often unable to play or take part in leisure activities
+                    quietly.
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Is often “on the go” acting as if “driven by a motor”.
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">Often talks excessively.</h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often blurts out an answer before a question has been
+                    completed.
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">Often has trouble waiting their turn.</h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often interrupts or intrudes on others (e.g. butts into
+                    conversations or game)
+                  </h3>
+                </div>
+              </article>
+            </div>
           </div>
-        </div>
 
-        <div
-          id="panel-inattentive"
-          class="tab-panel"
-          role="tabpanel"
-          aria-labelledby="tab-inattentive"
-          hidden
-        >
-          <div class="card-grid row">
-            <article class="card col-12 col-md-6 col-lg-4">
-              <div class="card-body">
-                <h3 class="h5">Symptom</h3>
-                <p>Info</p>
-              </div>
-            </article>
-            <article class="card col-12 col-md-6 col-lg-4">
-              <div class="card-body">
-                <h3 class="h5">Symptom</h3>
-                <p>Info</p>
-              </div>
-            </article>
-            <article class="card col-12 col-md-6 col-lg-4">
-              <div class="card-body">
-                <h3 class="h5">Symptom</h3>
-                <p>Info</p>
-              </div>
-            </article>
+          <div
+            id="panel-inattentive"
+            class="tab-pane fade"
+            role="tabpanel"
+            aria-labelledby="tab-inattentive"
+          >
+            <div class="card-grid row">
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often fails to give close attention to details or makes
+                    careless mistakes in schoolwork, at work, or with other
+                    activities.
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often has trouble holding attention on tasks or play
+                    activities.
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often does not seem to listen when spoken to directly.
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often does not follow through on instructions and fails to
+                    finish schoolwork, chores, or duties in the workplace (e.g.,
+                    loses focus, side-tracked).
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often has trouble organising tasks and activities.
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often avoids, dislikes, or is reluctant to do tasks that
+                    require mental effort over a long period of time (such as
+                    schoolwork or homework).
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often loses things necessary for tasks and activities (e.g.
+                    school materials, pencils, books, tools, wallets, keys,
+                    paperwork, eyeglasses, mobile telephones).
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">Is often easily distracted</h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">Is often forgetful in daily activities.</h3>
+                </div>
+              </article>
+            </div>
           </div>
-        </div>
 
-        <div
-          id="panel-combined"
-          class="tab-panel"
-          role="tabpanel"
-          aria-labelledby="tab-comb"
-          hidden
-        >
-          <div class="card-grid row">
-            <article class="card col-12 col-md-6 col-lg-4">
-              <div class="card-body">
-                <h3 class="h5">Symptom</h3>
-                <p>Info</p>
-              </div>
-            </article>
-            <article class="card col-12 col-md-6 col-lg-4">
-              <div class="card-body">
-                <h3 class="h5">Symptom</h3>
-                <p>Info</p>
-              </div>
-            </article>
-            <article class="card col-12 col-md-6 col-lg-4">
-              <div class="card-body">
-                <h3 class="h5">Symptom</h3>
-                <p>Info</p>
-              </div>
-            </article>
+          <div
+            id="panel-comb"
+            class="tab-pane fade"
+            role="tabpanel"
+            aria-labelledby="tab-comb"
+          >
+            <div class="card-grid row">
+              <!-- Combined: Hyperactive + Inattentive symptoms -->
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often fidgets with or taps hands or feet, or squirms in
+                    seat.
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often leaves seat in situations when remaining seated is
+                    expected.
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often runs about or climbs in situations where it is not
+                    appropriate (adolescents or adults may be limited to feeling
+                    restless).
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often unable to play or take part in leisure activities
+                    quietly.
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Is often “on the go” acting as if “driven by a motor”.
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">Often talks excessively.</h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often blurts out an answer before a question has been
+                    completed.
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">Often has trouble waiting their turn.</h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often interrupts or intrudes on others (e.g. butts into
+                    conversations or game)
+                  </h3>
+                </div>
+              </article>
+
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often fails to give close attention to details or makes
+                    careless mistakes in schoolwork, at work, or with other
+                    activities.
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often has trouble holding attention on tasks or play
+                    activities.
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often does not seem to listen when spoken to directly.
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often does not follow through on instructions and fails to
+                    finish schoolwork, chores, or duties in the workplace (e.g.,
+                    loses focus, side-tracked).
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often has trouble organising tasks and activities.
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often avoids, dislikes, or is reluctant to do tasks that
+                    require mental effort over a long period of time (such as
+                    schoolwork or homework).
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">
+                    Often loses things necessary for tasks and activities (e.g.
+                    school materials, pencils, books, tools, wallets, keys,
+                    paperwork, eyeglasses, mobile telephones).
+                  </h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">Is often easily distracted</h3>
+                </div>
+              </article>
+              <article class="card col-12 col-md-6 col-lg-4">
+                <div class="card-body">
+                  <h3 class="h5">Is often forgetful in daily activities.</h3>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </section>
