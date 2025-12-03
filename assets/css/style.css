@@ -107,9 +107,7 @@ textarea {
 }
 
 /* Types section (tabs + cards) */
-.types {
-  padding: 1.5rem 0;
-}
+
 .tab-content {
   margin-top: 1rem;
 }
@@ -144,8 +142,6 @@ label {
   padding: 1rem 0;
   margin-top: 2rem;
   color: var(--color-muted, #6b7280);
-}
-.footer-inner {
 }
 
 /* Responsive breakpoints */
