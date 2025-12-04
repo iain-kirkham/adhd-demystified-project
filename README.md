@@ -199,6 +199,15 @@ Resources Mobile
 
 ![Resources Mobile](readme-assets/resources-mobile.png)
 
+Symptoms Desktop
+
+![Desktop Symptoms](readme-assets/symptoms-tabs.png)
+
+
+Symptoms Mobile
+
+![Desktop Symptoms](readme-assets/symptoms-mobile.png)
+
 ### Code Validation
 
 I have validated my CSS and it has no errors on the W3C validator.
