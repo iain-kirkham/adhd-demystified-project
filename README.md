@@ -201,7 +201,7 @@ Resources Mobile
 
 Symptoms Desktop
 
-![Desktop Symptoms](readme-assets/symptoms-tabs.png)
+![Desktop Symptoms](readme-assets/symptons-tabs.png)
 
 
 Symptoms Mobile
