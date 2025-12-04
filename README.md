@@ -237,9 +237,6 @@ Resource filters by audience (if enabled) | Apply audience filter; verify resour
 
 Attach screenshots for each test where required by your submission checklist.
 
-## Bugs
-
-List of bugs and how did you fix them
 
 ## Deployment
 
