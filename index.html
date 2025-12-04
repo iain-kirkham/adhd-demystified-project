@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ADHD Demystified</title>
+    <meta
+      name="description"
+      content="Clear, practical ADHD guidance: understand types, diagnosis, and find support. Trusted resources and tools for neurodiverse people and allies."
+    />
     <!-- Preconnect for Google Fonts (loads fonts faster) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -78,7 +82,8 @@
         <div class="hero-inner container">
           <h1>ADHD Demystified</h1>
           <p class="subtitle">
-            Understand ADHD — its types, diagnosis, and support.
+            Clear, practical ADHD guidance — understand the sub-types,
+            diagnosis, and find support.
           </p>
 
           <div
@@ -105,10 +110,83 @@
         </div>
       </section>
 
+      <!-- Prominent crisis alert (moved below hero) -->
+      <div class="container-fluid px-0">
+        <div
+          class="alert alert-danger rounded-0 mb-0 text-center"
+          role="alert"
+          aria-live="assertive"
+        >
+          <div class="container py-2">
+            <strong>If you are in immediate danger or in crisis:</strong>
+            <i
+              class="fa-solid fa-triangle-exclamation me-2"
+              aria-hidden="true"
+            ></i>
+            <strong>If you are in immediate danger or in crisis:</strong>
+            <span class="visually-hidden">Alert:</span>
+            <span class="d-block"
+              >Call emergency services now: <strong>999</strong> (or your local
+              emergency number).</span
+            >
+            <div class="mt-2">
+              <a
+                href="tel:116123"
+                class="btn btn-primary btn-sm me-2 fw-bold rounded-3"
+                aria-label="Call Samaritans"
+                >Samaritans: 116 123</a
+              >
+              <a
+                href="https://www.nhs.uk/mental-health/get-help-in-a-mental-health-crisis/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary btn-sm fw-bold rounded-3"
+                aria-label="NHS urgent mental health support"
+                >NHS urgent mental health support</a
+              >
+            </div>
+            <p class="small mb-0 mt-2">
+              If you are outside the UK, contact local emergency services or
+              your national crisis line.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- About: What is ADHD -->
+      <section id="about" class="about container pt-3">
+        <div class="row">
+          <div class="col-12">
+            <h2>What is ADHD?</h2>
+            <p class="lede">
+              ADHD (Attention Deficit Hyperactivity Disorder) is a
+              neurodevelopmental condition that affects attention, impulse
+              control and activity levels. It can present differently between
+              people some have primarily inattentive symptoms (difficulty
+              concentrating, forgetfulness), others more hyperactive/impulsive
+              symptoms (restlessness, interrupting), and many experience a mix
+              (combined). ADHD can affect the mental health of individuals, and
+              can be managed effectively with the right supports.
+            </p>
+            <p class="small text-muted">
+              This site provides practical strategies, links to resources, and
+              information about diagnosis and treatment options. If you think
+              you might have ADHD, consider discussing it with your GP or a
+              specialist.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <!-- Types section -->
       <section id="types" class="types container pt-4">
         <h2>ADHD types</h2>
-        <p class="lede">Brief text about ADHD and how it's split into types</p>
+        <p class="lede">
+          ADHD is a neurodevelopmental condition that affects attention,
+          activity levels and impulse control. It commonly presents as
+          predominantly inattentive, predominantly hyperactive/impulsive, or a
+          combined type each with different patterns and practical supports.
+        </p>
 
         <ul class="nav nav-tabs" role="tablist" aria-label="ADHD types">
           <li class="nav-item" role="presentation">
@@ -122,7 +200,8 @@
               aria-controls="panel-hyperactive"
               aria-selected="false"
             >
-              Hyperactive
+              <i class="fa-solid fa-bolt me-1" aria-hidden="true"></i
+              >Hyperactive
             </button>
           </li>
           <li class="nav-item" role="presentation">
@@ -136,7 +215,8 @@
               aria-controls="panel-inattentive"
               aria-selected="false"
             >
-              Inattentive
+              <i class="fa-solid fa-brain me-1" aria-hidden="true"></i
+              >Inattentive
             </button>
           </li>
           <li class="nav-item" role="presentation">
@@ -150,7 +230,8 @@
               aria-controls="panel-comb"
               aria-selected="true"
             >
-              Combined
+              <i class="fa-solid fa-layer-group me-1" aria-hidden="true"></i
+              >Combined
             </button>
           </li>
         </ul>
@@ -165,7 +246,16 @@
             <div class="group-header mb-3">
               <h3 class="group-title">Hyperactive / Impulsive symptoms</h3>
               <p class="small text-muted">
-                Common signs related to hyperactivity and impulsivity.
+                Hyperactive/impulsive presentation involves high activity
+                levels, restlessness and acting quickly without waiting. People
+                may struggle to sit still, interrupt, or feel constantly "on the
+                go." Movement breaks, clear routines and task segmentation can
+                help manage symptoms. For diagnostic criteria (DSM-5): children
+                and adolescents (under 17) typically meet criteria with 6 or
+                more hyperactive/impulsive symptoms; adults (17+) require 5 or
+                more. Symptoms should have begun before age 12 and cause
+                impairment in two or more settings (for example home and
+                school/work).
               </p>
             </div>
             <div class="card-grid row row-cols-1 row-cols-md-3 g-4">
@@ -265,8 +355,15 @@
             <div class="group-header mb-3">
               <h3 class="group-title">Inattentive symptoms</h3>
               <p class="small text-muted">
-                Common signs related to inattention and difficulty sustaining
-                focus.
+                Inattentive presentation is marked by difficulty sustaining
+                focus, forgetfulness, and challenges organising tasks. Tasks
+                requiring prolonged mental effort may be especially hard.
+                External organisers, chunking tasks and minimizing distractions
+                are useful supports. For diagnostic criteria (DSM-5): children
+                and adolescents (under 17) typically meet criteria with 6 or
+                more inattentive symptoms; adults (17+) require 5 or more.
+                Symptoms should have begun before age 12 and cause impairment in
+                two or more settings.
               </p>
             </div>
             <div class="card-grid row row-cols-1 row-cols-md-3 g-4">
@@ -368,179 +465,207 @@
             <div class="group-header mb-3">
               <h3 class="group-title">Hyperactive / Impulsive symptoms</h3>
               <p class="small text-muted">
-                Common signs related to hyperactivity and impulsivity.
+                The combined presentation includes both inattentive and
+                hyperactive/impulsive symptoms. Many people experience a mix —
+                for example, struggling to concentrate while also feeling
+                restless. Management commonly blends structure, behavioural
+                strategies and clinical supports tailored to individual needs. A
+                combined diagnosis requires meeting the symptom-count criteria
+                for both domains (5 of both inattentive and
+                hyperactive/impulsive symptoms in adults and 6 in children).
               </p>
             </div>
-            <div class="card-grid row row-cols-1 row-cols-md-3 g-4">
-              <!-- Combined: Hyperactive + Inattentive symptoms -->
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="h5">
-                      Often fidgets with or taps hands or feet, or squirms in
-                      seat.
-                    </h3>
+            <div class="card-grid">
+              <div class="group-subsection mb-3">
+                <h4 class="h6">Hyperactive / Impulsive features</h4>
+                <p class="small text-muted mb-2">
+                  These features describe high activity, impulsive actions and
+                  difficulty with waiting or inhibiting responses.
+                </p>
+              </div>
+
+              <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h3 class="h5">
+                        Often fidgets with or taps hands or feet, or squirms in
+                        seat.
+                      </h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="h5">
-                      Often leaves seat in situations when remaining seated is
-                      expected.
-                    </h3>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h3 class="h5">
+                        Often leaves seat in situations when remaining seated is
+                        expected.
+                      </h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="h5">
-                      Often runs about or climbs in situations where it is not
-                      appropriate (adolescents or adults may be limited to
-                      feeling restless).
-                    </h3>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h3 class="h5">
+                        Often runs about or climbs in situations where it is not
+                        appropriate (adolescents or adults may be limited to
+                        feeling restless).
+                      </h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="h5">
-                      Often unable to play or take part in leisure activities
-                      quietly.
-                    </h3>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h3 class="h5">
+                        Often unable to play or take part in leisure activities
+                        quietly.
+                      </h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="h5">
-                      Is often “on the go” acting as if “driven by a motor”.
-                    </h3>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h3 class="h5">
+                        Is often “on the go” acting as if “driven by a motor”.
+                      </h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="h5">Often talks excessively.</h3>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h3 class="h5">Often talks excessively.</h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="h5">
-                      Often blurts out an answer before a question has been
-                      completed.
-                    </h3>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h3 class="h5">
+                        Often blurts out an answer before a question has been
+                        completed.
+                      </h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="h5">Often has trouble waiting their turn.</h3>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h3 class="h5">Often has trouble waiting their turn.</h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="h5">
-                      Often interrupts or intrudes on others (e.g. butts into
-                      conversations or game)
-                    </h3>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h3 class="h5">
+                        Often interrupts or intrudes on others (e.g. butts into
+                        conversations or game)
+                      </h3>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="h5">
-                      Often fails to give close attention to details or makes
-                      careless mistakes in schoolwork, at work, or with other
-                      activities.
-                    </h3>
+              <div class="group-subsection mb-3">
+                <h4 class="h6">Inattentive features</h4>
+                <p class="small text-muted mb-2">
+                  These features describe difficulties with sustaining
+                  attention, organising tasks and remembering details.
+                </p>
+              </div>
+
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h3 class="h5">
+                        Often fails to give close attention to details or makes
+                        careless mistakes in schoolwork, at work, or with other
+                        activities.
+                      </h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="h5">
-                      Often has trouble holding attention on tasks or play
-                      activities.
-                    </h3>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h3 class="h5">
+                        Often has trouble holding attention on tasks or play
+                        activities.
+                      </h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="h5">
-                      Often does not seem to listen when spoken to directly.
-                    </h3>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h3 class="h5">
+                        Often does not seem to listen when spoken to directly.
+                      </h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="h5">
-                      Often does not follow through on instructions and fails to
-                      finish schoolwork, chores, or duties in the workplace
-                      (e.g., loses focus, side-tracked).
-                    </h3>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h3 class="h5">
+                        Often does not follow through on instructions and fails
+                        to finish schoolwork, chores, or duties in the workplace
+                        (e.g., loses focus, side-tracked).
+                      </h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="h5">
-                      Often has trouble organising tasks and activities.
-                    </h3>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h3 class="h5">
+                        Often has trouble organising tasks and activities.
+                      </h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="h5">
-                      Often avoids, dislikes, or is reluctant to do tasks that
-                      require mental effort over a long period of time (such as
-                      schoolwork or homework).
-                    </h3>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h3 class="h5">
+                        Often avoids, dislikes, or is reluctant to do tasks that
+                        require mental effort over a long period of time (such
+                        as schoolwork or homework).
+                      </h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="h5">
-                      Often loses things necessary for tasks and activities
-                      (e.g. school materials, pencils, books, tools, wallets,
-                      keys, paperwork, eyeglasses, mobile telephones).
-                    </h3>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h3 class="h5">
+                        Often loses things necessary for tasks and activities
+                        (e.g. school materials, pencils, books, tools, wallets,
+                        keys, paperwork, eyeglasses, mobile telephones).
+                      </h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="h5">Is often easily distracted</h3>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h3 class="h5">Is often easily distracted</h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="h5">Is often forgetful in daily activities.</h3>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h3 class="h5">
+                        Is often forgetful in daily activities.
+                      </h3>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -559,17 +684,25 @@
           <div class="col-12 col-md-4 col-lg-4">
             <div class="card small-card h-100">
               <div class="card-body text-center p-3">
-                <h3 class="h5">Self-check</h3>
+                <h3 class="h5">
+                  <i class="fa-solid fa-stethoscope me-2" aria-hidden="true"></i
+                  >How ADHD is diagnosed
+                </h3>
                 <p>
-                  Quick screening questionnaire to help you decide next steps.
+                  Diagnosis combines a clinical interview, validated rating
+                  scales, and clear evidence that symptoms affect daily life in
+                  multiple settings (home, work, school). For adults, clinicians
+                  will also review childhood history and current functioning.
+                  Bringing concrete examples, timelines and any previous reports
+                  helps the assessor.
                 </p>
                 <p>
                   <a
-                    href="https://adhduk.co.uk/adult-adhd-screening-survey/"
+                    href="https://www.nhs.uk/conditions/adhd-adults/"
                     class="btn btn-primary btn-sm"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >Take the self-check</a
+                    >NHS guidance on diagnosis</a
                   >
                 </p>
               </div>
@@ -578,10 +711,16 @@
           <div class="col-12 col-md-4 col-lg-4">
             <div class="card small-card h-100">
               <div class="card-body text-center p-3">
-                <h3 class="h5">Choose pathway</h3>
+                <h3 class="h5">
+                  <i class="fa-solid fa-map-signs me-2" aria-hidden="true"></i
+                  >Choose a pathway (NHS, private or RTC)
+                </h3>
                 <p>
-                  Compare NHS, private and self-managed options to pick what
-                  suits you.
+                  Options include NHS referral, private assessment, or self-
+                  managed supports. In England, some patients can use "Right to
+                  Choose" (RTC) to select an approved external provider instead
+                  of waiting for local NHS services. RTC availability and
+                  eligibility vary depending on location.
                 </p>
                 <p>
                   <a
@@ -589,7 +728,7 @@
                     class="btn btn-primary btn-sm"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >Choose a pathway</a
+                    >Compare pathways</a
                   >
                 </p>
               </div>
@@ -598,15 +737,48 @@
           <div class="col-12 col-md-4 col-lg-4">
             <div class="card small-card h-100">
               <div class="card-body text-center p-3">
-                <h3 class="h5">Get assessed</h3>
-                <p>Information about formal assessment and next steps.</p>
+                <h3 class="h5">
+                  <i class="fa-solid fa-user-doctor me-2" aria-hidden="true"></i
+                  >Get assessed
+                </h3>
+                <p>
+                  Begin with your GP: describe concerns, give examples of how
+                  symptoms affect daily life, and request referral options. If
+                  NHS waiting lists are long, ask your GP about RTC (Right to
+                  Choose) in England or about accredited private services, be
+                  clear on shared care agreements and what documentation the
+                  assessor needs.
+                </p>
                 <p>
                   <a
                     href="https://www.nhs.uk/conditions/adhd-adults/"
                     class="btn btn-primary btn-sm"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >Find assessment options</a
+                    >Where to start</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class="card small-card h-100">
+              <div class="card-body text-center p-3">
+                <h3 class="h5">
+                  <i class="fa-solid fa-heart me-2" aria-hidden="true"></i
+                  >Managing ADHD
+                </h3>
+                <p>
+                  Practical strategies: use routines and timers, break tasks
+                  into short focused sprints (e.g. Pomodoro), externalise memory
+                  with calendars and lists, reduce distractions, prioritise
+                  sleep and exercise, and seek therapy or coaching for skills
+                  training. Discuss medication options with a clinician where
+                  appropriate.
+                </p>
+                <p>
+                  <a href="#resources" class="btn btn-primary btn-sm"
+                    >See resources</a
                   >
                 </p>
               </div>
@@ -619,7 +791,7 @@
       <section id="resources" class="container section">
         <div class="row resources-accordion-parent">
           <div class="col-12 text-center">
-            <h2>Resources</h2>
+            <h2 class="pb-2">Resources and Tools</h2>
           </div>
 
           <div class="col-12 col-sm-6 col-lg-3">
@@ -634,7 +806,11 @@
                     aria-expanded="false"
                     aria-controls="flush-collapseOne"
                   >
-                    How to ADHD
+                    <i
+                      class="fa-solid fa-play-circle me-2"
+                      aria-hidden="true"
+                    ></i
+                    >How to ADHD
                   </button>
                 </h2>
                 <div
@@ -643,15 +819,18 @@
                   data-bs-parent=".resources-accordion-parent"
                 >
                   <div class="accordion-body">
-                    How to ADHD is a popular YouTube channel by ADHDer Jessica
-                    McCabe that provides educational and practical content about
-                    ADHD.
-                    <a href="https://howtoadhd.com/">How to ADHD website</a>
-                    You can also buy her new book made by ADHDers for ADHDer's:
-                    <a href="https://howtoadhdbook.com/">
-                      How to ADHD An Insider's Guide to Working with Your Brain
-                      (Not Against It)
-                    </a>
+                    How to ADHD (Jessica McCabe) offers short videos and
+                    practical tips for living with ADHD, focusing on actionable
+                    strategies and lived experience.
+                    <p class="mt-2 mb-0">
+                      <a
+                        href="https://howtoadhd.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary btn-sm"
+                        >Visit How to ADHD</a
+                      >
+                    </p>
                   </div>
                 </div>
               </div>
@@ -670,7 +849,11 @@
                     aria-expanded="false"
                     aria-controls="flush-collapseTwo"
                   >
-                    ADHD UK
+                    <i
+                      class="fa-solid fa-hands-helping me-2"
+                      aria-hidden="true"
+                    ></i
+                    >ADHD UK
                   </button>
                 </h2>
                 <div
@@ -679,10 +862,17 @@
                   data-bs-parent=".resources-accordion-parent"
                 >
                   <div class="accordion-body">
-                    ADHD UK is a leading charity dedicated to supporting
-                    individuals with ADHD and their families in the United
-                    Kingdom. You can find
-                    <a href="https://adhduk.co.uk/">ADHD UK website</a>
+                    ADHD UK provides information, support services and advocacy
+                    for people with ADHD and their families across the UK.
+                    <p class="mt-2 mb-0">
+                      <a
+                        href="https://adhduk.co.uk/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary btn-sm"
+                        >Visit ADHD UK</a
+                      >
+                    </p>
                   </div>
                 </div>
               </div>
@@ -701,7 +891,8 @@
                     aria-expanded="false"
                     aria-controls="flush-collapseThree"
                   >
-                    ADDitude Magazine
+                    <i class="fa-solid fa-newspaper me-2" aria-hidden="true"></i
+                    >ADDitude Magazine
                   </button>
                 </h2>
                 <div
@@ -710,12 +901,18 @@
                   data-bs-parent=".resources-accordion-parent"
                 >
                   <div class="accordion-body">
-                    ADDitude Magazine is a comprehensive resource for
-                    individuals with ADHD and their families, offering expert
-                    advice and practical tips on managing ADHD.
-                    <a href="https://www.additudemag.com/"
-                      >Visit ADDitude Magazine</a
-                    >
+                    ADDitude Magazine provides evidence-based articles, tips and
+                    tools for adults, parents and professionals supporting
+                    people with ADHD.
+                    <p class="mt-2 mb-0">
+                      <a
+                        href="https://www.additudemag.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary btn-sm"
+                        >Visit ADDitude</a
+                      >
+                    </p>
                   </div>
                 </div>
               </div>
@@ -725,26 +922,39 @@
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="accordion accordion-flush">
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour">
+                <h2 class="accordion-header" id="headingFlow">
                   <button
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseFour"
+                    data-bs-target="#flush-collapseFlow"
                     aria-expanded="false"
-                    aria-controls="flush-collapseFour"
+                    aria-controls="flush-collapseFlow"
                   >
-                    Info link 4
+                    <i class="fa-solid fa-users me-2" aria-hidden="true"></i
+                    >Flow body‑doubling
                   </button>
                 </h2>
                 <div
-                  id="flush-collapseFour"
+                  id="flush-collapseFlow"
                   class="accordion-collapse collapse"
                   data-bs-parent=".resources-accordion-parent"
                 >
                   <div class="accordion-body">
-                    Short description and the link:
-                    <a href="#">Visit resource</a>
+                    Some ADHDers find that "body doubling" working alongside
+                    another person (in-person or virtually) helps with focus,
+                    accountability and completing tasks. Flow offers short,
+                    scheduled co-working sessions and community spaces designed
+                    to support this approach.
+                    <p class="mt-2 mb-0">
+                      <a
+                        href="https://www.flow.club/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary btn-sm"
+                        >Visit Flow</a
+                      >
+                    </p>
                   </div>
                 </div>
               </div>
@@ -754,26 +964,39 @@
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="accordion accordion-flush">
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
+                <h2 class="accordion-header" id="headingPomodoro">
                   <button
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseFive"
+                    data-bs-target="#flush-collapsePomodoro"
                     aria-expanded="false"
-                    aria-controls="flush-collapseFive"
+                    aria-controls="flush-collapsePomodoro"
                   >
-                    Info link 5
+                    <i class="fa-regular fa-clock me-2" aria-hidden="true"></i
+                    >Pomofocus
                   </button>
                 </h2>
                 <div
-                  id="flush-collapseFive"
+                  id="flush-collapsePomodoro"
                   class="accordion-collapse collapse"
                   data-bs-parent=".resources-accordion-parent"
                 >
                   <div class="accordion-body">
-                    Short description and the link:
-                    <a href="#">Visit resource</a>
+                    The Pomodoro Technique helps manage time by working in
+                    focused, timed intervals (typically 25 minutes) separated by
+                    short breaks. It can help people with time blindness create
+                    structure, but note it may interrupt deep flow for some
+                    ADHDers.
+                    <p class="mt-2 mb-0">
+                      <a
+                        href="https://pomofocus.io/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary btn-sm"
+                        >Open Pomofocus</a
+                      >
+                    </p>
                   </div>
                 </div>
               </div>
@@ -783,26 +1006,123 @@
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="accordion accordion-flush">
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSix">
+                <h2 class="accordion-header" id="headingSunsama">
                   <button
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseSix"
+                    data-bs-target="#flush-collapseSunsama"
                     aria-expanded="false"
-                    aria-controls="flush-collapseSix"
+                    aria-controls="flush-collapseSunsama"
                   >
-                    Info link 6
+                    <i
+                      class="fa-solid fa-calendar-day me-2"
+                      aria-hidden="true"
+                    ></i
+                    >Sunsama daily planner
                   </button>
                 </h2>
                 <div
-                  id="flush-collapseSix"
+                  id="flush-collapseSunsama"
                   class="accordion-collapse collapse"
                   data-bs-parent=".resources-accordion-parent"
                 >
                   <div class="accordion-body">
-                    Short description and the link:
-                    <a href="#">Visit resource</a>
+                    Sunsama is a focused daily planner that integrates tasks and
+                    calendar events, and includes a focus mode to help you
+                    protect uninterrupted work time. It can help people who need
+                    structure across tools and prefer a daily planning ritual.
+                    <p class="mt-2 mb-0">
+                      <a
+                        href="https://www.sunsama.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary btn-sm"
+                        >Visit Sunsama</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="accordion accordion-flush">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingObsidian">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseObsidian"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseObsidian"
+                  >
+                    <i
+                      class="fa-solid fa-file-lines me-2"
+                      aria-hidden="true"
+                    ></i
+                    >Obsidian - note taking
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseObsidian"
+                  class="accordion-collapse collapse"
+                  data-bs-parent=".resources-accordion-parent"
+                >
+                  <div class="accordion-body">
+                    Obsidian is a highly customisable note taking app that uses
+                    linked plain text files. Many people adapt it into personal
+                    systems that fit their working memory and workflow.
+                    <p class="mt-2 mb-0">
+                      <a
+                        href="https://obsidian.md/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary btn-sm"
+                        >Visit Obsidian</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="accordion accordion-flush">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingCoaching">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseCoaching"
+                    aria-expanded="false"
+                    aria-controls="#flush-collapseCoaching"
+                  >
+                    <i class="fa-solid fa-user-tie me-2" aria-hidden="true"></i
+                    >Neurodiversity coaching
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseCoaching"
+                  class="accordion-collapse collapse"
+                  data-bs-parent=".resources-accordion-parent"
+                >
+                  <div class="accordion-body">
+                    ADHD coaching provides structured, practical support from
+                    professional coaches experienced with neurodiversity. Search
+                    accredited directories to find local or remote coaches.
+                    <p class="mt-2 mb-0">
+                      <a
+                        href="https://www.lifecoach-directory.org.uk/topics/neurodiversity-coaching.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary btn-sm"
+                        >Find a coach</a
+                      >
+                    </p>
                   </div>
                 </div>
               </div>
