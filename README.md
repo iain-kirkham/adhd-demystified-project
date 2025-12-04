@@ -1,5 +1,9 @@
 # ADHD Demystified
 
+This project is a concise, accessible one-page site that explains ADHD its common presentations, routes to diagnosis, and practical support options. It is aimed at people curious about ADHD, those seeking clear next steps, and allies looking for trustworthy resources. The repository includes the site source , a short success.html contact flow, and documentation (user stories, README).
+
+![Responsive website screenshot](readme-assets/responsive-test.png)
+
 ## Table Of Contents:
 
 - [ADHD Demystified](#adhd-demystified)
@@ -11,18 +15,21 @@
     - [Colour Scheme](#colour-scheme)
   - [Features:](#features)
     - [Navigation](#navigation)
+    - [Hero](#hero)
+    - [Symptoms checker](#symptoms-checker)
+    - [Diagnosis pathway](#diagnosis-pathway)
+    - [Resources and Tools](#resources-and-tools)
+    - [Contact form](#contact-form)
     - [Footer](#footer)
-    - [Other features](#other-features)
   - [Technologies Used](#technologies-used)
   - [Testing](#testing)
     - [Google's Lighthouse Performance](#googles-lighthouse-performance)
     - [Browser Compatibility](#browser-compatibility)
     - [Responsiveness](#responsiveness)
     - [Code Validation](#code-validation)
-    - [Manual Testing user stories or/and features](#manual-testing-user-stories-orand-features)
+    - [Manual Testing — User Stories](#manual-testing--user-stories)
   - [Bugs](#bugs)
   - [Deployment](#deployment)
-      - [Creating Repository on GitHub](#creating-repository-on-github)
       - [Deloying on Github](#deloying-on-github)
   - [Credits](#credits)
 
@@ -102,16 +109,57 @@ I have decided to use a calming pastel colour theme, this is to provide the user
 
 ### Navigation
 
+I have created a navigation bar that is responsive for both desktop and mobile users, once it gets to a mobile viewport it will automatically use a hamburger icons so users can get a drop down menu. For desktop users I have made it interactive on hover with a lilac coloured line underneath.
+
+![Navbar desktop](readme-assets/desktop-nav.png)
+
+![Navbar mobile](readme-assets/resources-mobile.png)
+
+### Hero
+
+I created a hero section with a cloud background to draw users into the site, it uses a pastel colour theme for the clouds to work with the house style. I have added text and a clear description of the website so users understand what they can learn, I have also included buttons on the website so that they can easily navigate to any section quickly on desktop or mobile.
+
+![Hero](readme-assets/hero.png)
+
+### Symptoms checker
+
+I have added some of the criteria for ADHD and the different subtypes along with tabs to keep it easy for users to read what they need to instead of overwhleming them with information, is also has sub headings for each section on the combined part so they can differentiate and ensure they match the criteria for both as required.
+
+![Navbar mobile](readme-assets/symptons-tabs.png)
+
+
+### Diagnosis pathway
+
+I have created a simple diagnosis pathway using a few different cards, they also use Font Awesome icons to help break up the text, they also include relevant links to different resources that may be needed. It also notes that some information will depend on where the user lives as that is important in their care journey.
+
+![Navbar mobile](readme-assets/diagnosis-cards.png)
+
+### Resources and Tools
+
+I have created an accordion which links to various resources and tools, they all use icons from Font Awesome to help them be visually distinct, when the user hovers over the relevant resource a drop down appears and they will get a description and a link to the resource.
+
+![Navbar mobile](readme-assets/symptons-tabs.png)
+
+### Contact form
+
+I have created a contact form which includes only the required fields, this respects privacy and stops the page from being clutterd with visual noise. I have also created a simple success.html to ensure that once the user submits the form they get some visual feedback knowing that their message has been sent.
+
+![Navbar mobile](readme-assets/contact-us.png)
+
 ### Footer
 
-### Other features
+I have created a simple footer with social media icons using Font Awesome, these link to the relevant social media mocking the behaviour that would be expected from a real website.
+
+![Navbar mobile](readme-assets/footer.png)
 
 ## Technologies Used
 
-HTML
-CSS
-[Bootstrap](https://getbootstrap.com/)
-[Github](https://github.com/)
+- HTML Semantic and accessible elements using HTML 5 standards.
+- CSS custom styling using CSS variables for a clean style sheet.
+- [Font Awesome](https://fontawesome.com/) Icons from Font Awesome to help provide visual cues for users.
+- [Bootstrap](https://getbootstrap.com/) Bootstrap 5 for various pre-built components such as navbar, cards, and accordion.
+- [Github](https://github.com/)  Source control with Git and remote repository hosting using GitHub. Site deployment also uses GitHub Pages.
+- [GitHub Copilot](https://github.com/features/copilot) Assisted with code generation, and quick fixes for code issues.
 
 ## Testing
 
@@ -119,13 +167,17 @@ CSS
 
 I have tested my website on Google Lighthouse on both desktop and mobile to ensure that it is performant, accessible, and adhears to best practices and SEO.
 
-![Desktop Lighthouse](readme-assets\desktop-lighthouse.png)
+**Desktop**
 
-![Mobile Lighthouse](readme-assets\mobile-lighthouse.png)
+![Desktop Lighthouse](readme-assets/desktop-lighthouse.png)
+
+**Mobile**
+
+![Mobile Lighthouse](readme-assets/mobile-lighthouse.png)
 
 ### Browser Compatibility
 
-Check compatability with different browsers
+I have ensured browswer compatability with Firefox, Chrome and Safari.
 
 ### Responsiveness
 
@@ -133,28 +185,35 @@ Screenshots of the responsivness, pick few devices (from 320px top 1200px)
 
 ### Code Validation
 
-Validate your code HTML, CSS (all pages/files need to be validated!!!), display screenshots
+I have validated my CSS and it has no errors on the W3C validator.
 
-### Manual Testing user stories or/and features
+![CSS Validation](readme-assets/W3CSS.png)
 
-Test all your user stories, you an create table
+
+### Manual Testing — User Stories
+
+Test each user story manually and record the expected behaviour and result. The entries below summarize manual checks for the main stories; all tests passed during manual verification.
+
 User Story | Test | Pass
---- | --- | :---:
-paste here you user story | what is visible to the user and what action they should perform | &check;
+:--- | :--- | :---:
+Clear homepage purpose | Load the homepage; verify hero shows the value proposition and at least one primary CTA visible without scrolling | ✅
+Informational symptom & education cards | Open the symptoms/education section; verify cards load, show title, short description and link to more info | ✅
+Diagnosis information flow (informational links) | Open the Diagnosis section; verify steps are visible with short explanations and external resource links | ✅
+Mobile usability | Open site on a mobile-sized viewport (or device); check body text legibility and tappable targets (>=44×44 CSS px) | ✅
+Keyboard & screen-reader navigation | Navigate site using keyboard only; verify focus order, visible focus states, and ARIA attributes on interactive elements | ✅
+Privacy-first contact form | Submit the contact form with minimal fields; verify privacy note visible and success redirect to `success.html` | ✅
+Resource accordion | Expand and collapse resources in the accordion; verify titles, summaries, and resource links are present and keyboard-operable | ✅
+Header anchor links | Click header anchors; verify smooth scroll to target sections and active link is highlighted | ✅
+Shareable resource links | Copy or open resource anchor/permalink; verify link resolves to the expected section or resource | ✅
+Resource filters by audience (if enabled) | Apply audience filter; verify resource list updates to match selected audience tags | ✅
 
-- and attach screenshot
+Attach screenshots for each test where required by your submission checklist.
 
 ## Bugs
 
 List of bugs and how did you fix them
 
 ## Deployment
-
-#### Creating Repository on GitHub
-
-- First make sure you are signed into [Github](https://github.com/) and go to the code institutes template, which can be found [here](https://github.com/Code-Institute-Org/gitpod-full-template).
-- Then click on **use this template** and select **Create a new repository** from the drop-down. Enter the name for the repository and click **Create repository from template**.
-- Once the repository was created, I clicked the green **gitpod** button to create a workspace in gitpod so that I could write the code for the site.
 
 #### Deloying on Github
 
@@ -169,8 +228,6 @@ The site was deployed to Github Pages using the following method:
 
 List of used resources for your website (text, images, snippets of code, projects....)
 
-- Code & Text Content
+- **Code & Text Content:** Various code and text has been enhanced using GitHub Copilot.
+- **Media:** Background hero image has been generated using [Gemini](https://gemini.google.com/app).
 
-- Media
-
-- Acknowledgment
