@@ -113,7 +113,7 @@ I have created a navigation bar that is responsive for both desktop and mobile u
 
 ![Navbar desktop](readme-assets/desktop-nav.png)
 
-![Navbar mobile](readme-assets/resources-mobile.png)
+![Navbar mobile](readme-assets/mobile-nav.png)
 
 ### Hero
 
@@ -181,7 +181,23 @@ I have ensured browswer compatability with Firefox, Chrome and Safari.
 
 ### Responsiveness
 
-Screenshots of the responsivness, pick few devices (from 320px top 1200px)
+I have ensured that various elements of my website respond to different screen size, mostly focusing on mobile, and desktop breakpoints.
+
+Desktop navbar
+
+![Desktop navbar](readme-assets/desktop-nav.png)
+
+Mobile navbar
+
+![Navbar mobile](readme-assets/mobile-nav.png)
+
+Resources Desktop
+
+![Resources Desktop](readme-assets/resources-desktop.png)
+
+Resources Mobile
+
+![Resources Mobile](readme-assets/resources-mobile.png)
 
 ### Code Validation
 
@@ -189,6 +205,9 @@ I have validated my CSS and it has no errors on the W3C validator.
 
 ![CSS Validation](readme-assets/W3CSS.png)
 
+I have also validated my websites HTML through Nu Html Checker.
+
+![HTML validation](readme-assets/html-validation.png)
 
 ### Manual Testing — User Stories
 
