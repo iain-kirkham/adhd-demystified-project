@@ -2,14 +2,35 @@
   --font-heading: "Nunito Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial,
     sans-serif;
   --font-body: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  /* Soft sky-blue palette (Option 2 revised) */
-  --page-bg: #dbeef7; /* light sky */
-  --card-border: #d9edf8; /* soft blue border */
-  --card-bg: #ffffff;
-  --text: #111827; /* dark slate for contrast */
-  --accent: #f2c6de; /* pastel pink (decorative) */
-  /* stronger pink for CTAs to improve contrast and legibility */
-  --accent-strong: #c63a70; /* deeper rose for buttons */
+
+  /* Soft page background (flat) */
+  --page-bg: #ffffff;
+  --text: #2d3748; /* Dark slate-gray for WCAG AAA compliance */
+
+  /* WCAG Compliant Pastel Brand Palette */
+  /* Soft Lavender - calming, professional */
+  --brand-1: #c8b6ff;
+  --brand-1-contrast: #1a1a1a;
+
+  /* Mint Green - fresh, energizing */
+  --brand-2: #b8e6d5;
+  --brand-2-contrast: #1a1a1a;
+
+  /* Soft Peach - warm, approachable */
+  --brand-3: #ffd4b8;
+  --brand-3-contrast: #1a1a1a;
+
+  /* Powder Blue - trustworthy, calm */
+  --brand-4: #b8d4ff;
+  --brand-4-contrast: #1a1a1a;
+
+  /* Blush Pink - friendly, supportive */
+  --brand-5: #ffc2d4;
+  --brand-5-contrast: #1a1a1a;
+
+  /* Card styling with gradient borders */
+  --card-border: rgba(200, 182, 255, 0.3);
+  --card-shadow: 0 8px 32px rgba(200, 182, 255, 0.12);
 }
 
 /* Box sizing and reset */
@@ -24,6 +45,7 @@ body {
   height: 100%;
 }
 
+/* Page defaults (consolidated) */
 body {
   margin: 0;
   font-family: var(--font-body);
@@ -31,11 +53,8 @@ body {
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-}
-
-/* Page background and text colour from palette */
-body {
-  background-color: var(--page-bg);
+  background: var(--page-bg);
+  background-attachment: fixed;
   color: var(--text);
 }
 
@@ -52,30 +71,106 @@ h6 {
   line-height: 1.25;
 }
 
-/* Images and media */
-img,
-picture,
-video,
-svg {
-  max-width: 100%;
-  height: auto;
-  display: block;
+/* Navbar Styling (opaque) */
+.navbar {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid rgba(229, 231, 235, 1);
+  box-shadow: 0 6px 18px rgba(17, 24, 39, 0.06);
 }
 
-/* Links and focus styles */
-a {
-  color: var(--accent);
-  text-decoration: underline;
+/* Respect Bootstrap's fixed-top utility: if the navbar has
+   the `fixed-top` class, make it fixed to the top of the viewport */
+.navbar.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
 }
 
-a:hover,
-a:focus {
-  text-decoration: none;
+.navbar::after {
+  /* decorative single-color bar */
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--brand-1);
 }
 
-:focus {
-  outline: 3px solid rgba(0, 102, 204, 0.2);
-  outline-offset: 2px;
+.navbar-brand {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--brand-1) !important;
+  transition: transform 200ms ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+/* Nav link base styles */
+.nav-link {
+  color: var(--text) !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  border-radius: 8px;
+  transition: all 200ms ease;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 80%;
+  height: 2px;
+  background: var(--brand-1);
+  transition: transform 200ms ease;
+}
+
+.nav-link:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* Nav Tabs Styling */
+.nav-tabs {
+  border-bottom: 2px solid rgba(200, 182, 255, 0.15);
+  gap: 0.5rem;
+}
+
+.nav-tabs .nav-link {
+  border: 2px solid transparent;
+  border-radius: 10px 10px 0 0;
+  color: var(--text) !important;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem !important;
+  background: transparent;
+  transition: all 200ms ease;
+  position: relative;
+}
+
+.nav-tabs .nav-link::after {
+  display: none;
+}
+
+.nav-tabs .nav-link:hover {
+  background: rgba(200, 182, 255, 0.08);
+  border-color: rgba(200, 182, 255, 0.2);
+  color: #6b46c1 !important;
+}
+
+.nav-tabs .nav-link.active {
+  background: #ffffff;
+  border-color: transparent;
+  border-bottom: 3px solid transparent;
+  position: relative;
+  box-shadow: 0 -2px 10px rgba(200, 182, 255, 0.15);
+  border-top: 3px solid var(--brand-1);
 }
 
 /* Make form elements inherit font defaults */
@@ -88,51 +183,14 @@ textarea {
 
 /* Mobile-first layout and components */
 
-/* Hero */
-.hero {
-  background-image: url("../images/hero-forest.jpg");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  color: #fff;
-  padding: 2.5rem 1rem;
-  /* make hero fill the viewport and center content vertically */
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-}
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.25));
-  z-index: 0;
-}
-.hero > * {
-  position: relative;
-  z-index: 1;
-}
-.hero h1 {
-  font-size: 2rem;
-  margin: 0 0 0.5rem 0;
-}
-.hero .subtitle {
-  color: rgba(255, 255, 255, 0.9);
-}
-
-/* Hero CTA: minimal custom styles — layout handled by Bootstrap utilities */
-.btn-cta {
-  min-width: 160px;
-  letter-spacing: 0.01em;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-.btn-cta:focus,
-.btn-cta:hover {
-  transform: translateY(-2px);
-  transition: transform 120ms ease, box-shadow 120ms ease;
-  box-shadow: 0 6px 18px rgba(11, 102, 214, 0.12);
+/* Images and media */
+img,
+picture,
+video,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Types section (tabs + cards) */
@@ -140,54 +198,114 @@ textarea {
 .tab-content {
   margin-top: 1rem;
 }
-.card {
-  border: 1px solid var(--card-border);
-  background: var(--card-bg);
-  border-radius: 10px;
-}
 
-/* Apply palette to small diagnosis cards and symptom cards */
+/* Card styling — flat backgrounds and subtle shadows */
+.card,
 .small-card,
 .card-grid .card {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: 10px;
+  border: 1px solid var(--brand-2);
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  position: relative;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.card:hover,
+.small-card:hover,
+.card-grid .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px var(--brand-2), 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 /* Primary buttons / links use the strong accent for visibility */
-.btn-primary,
+.btn-primary {
+  background-color: var(--brand-1) !important;
+  border: none !important;
+  color: var(--brand-1-contrast) !important;
+  padding: 0.65rem 1.2rem;
+  font-weight: 700;
+  box-shadow: 0 6px 20px rgba(200, 182, 255, 0.22);
+  transition: box-shadow 180ms ease, transform 180ms ease;
+  border-radius: 10px;
+}
+
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: var(--accent-strong) !important;
-  border-color: var(--accent-strong) !important;
-  color: #fff !important;
-  padding: 0.55rem 0.9rem;
-  font-weight: 700;
-  box-shadow: 0 6px 18px rgba(198, 58, 112, 0.12);
-  transition: box-shadow 200ms ease, transform 200ms ease;
-  border-radius: 8px;
+  background-color: var(--brand-4) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(200, 182, 255, 0.28);
 }
 
 /* Footer social icons — increase visibility */
 .site-footer .social a {
-  color: var(--accent-strong);
-  opacity: 0.95;
+  color: var(--brand-1);
+  opacity: 0.9;
+  transition: all 200ms ease;
+  font-size: 1.25em;
+}
+
+.site-footer .social a:hover {
+  color: var(--brand-5);
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 /* Muted text inside cards — keeps readable contrast */
 .card p.small,
 .card .small,
 .card .text-muted {
-  color: #4b5563;
+  color: #4a5568;
 }
 
-Diagnosis .diagnosis {
+.diagnosis {
   padding: 1.5rem 0;
 }
 
 /* Resources */
-.resources {
-  padding: 1.5rem 0;
+/* Vertical spacing between resource accordion items (gap between rows) */
+.resources-accordion-parent .accordion {
+  margin-bottom: 1rem;
+}
+
+/* Accordion — brand-aware styles for the resources section */
+.resources-accordion-parent .accordion-button {
+  background-color: rgba(255, 212, 184, 0.18);
+  color: var(--text);
+  border: 1px solid rgba(255, 212, 184, 0.28);
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(26, 26, 26, 0.04);
+  padding: 0.6rem 0.9rem;
+  transition: background-color 180ms ease, transform 120ms ease,
+    box-shadow 120ms ease;
+}
+
+/* Collapsed (default) — muted brand-3 tint */
+.resources-accordion-parent .accordion-button.collapsed {
+  background-color: rgba(255, 212, 184, 0.12);
+  color: var(--text);
+}
+
+/* Expanded state — solid brand color 3 */
+.resources-accordion-parent .accordion-button:not(.collapsed) {
+  background-color: var(--brand-3) !important;
+  color: var(--brand-3-contrast) !important;
+  box-shadow: 0 12px 30px rgba(255, 212, 184, 0.22);
+  transform: translateY(-2px);
+}
+
+.resources-accordion-parent .accordion-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 6px rgba(255, 212, 184, 0.14);
+}
+
+/* Accordion body — keep content readable and separated */
+.resources-accordion-parent .accordion-body {
+  background: #ffffff;
+  border: 1px solid rgba(255, 212, 184, 0.06);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  color: var(--text);
+  padding: 1rem;
 }
 
 .contact {
@@ -203,12 +321,14 @@ label {
 .form-frame {
   max-width: 760px;
   width: 100%;
-  padding: 1rem 1.25rem;
-  background: rgba(255, 255, 255, 0.95);
+  padding: 1.5rem 2rem;
+  background: var(--brand-5);
   border: 1px solid var(--card-border);
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(17, 24, 39, 0.06);
+  box-shadow: 0 10px 30px rgba(184, 230, 213, 0.12);
+  position: relative;
 }
+
 .contact .form-frame {
   margin-top: 1rem;
 }
@@ -227,19 +347,45 @@ label {
     font-size: 2.25rem;
   }
   /* spacing is handled via Bootstrap utilities at larger breakpoints */
-  .form-row.inline {
-    display: flex;
-    gap: 1rem;
-  }
-  .form-row.inline input {
-    flex: 1 1 50%;
-  }
+  /* Removed unused ".form-row.inline" helper - not used in current markup. */
+}
+
+/* Hero (background image + overlay) */
+.hero {
+  background-image: url("../images/clouds-hero.webp");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+  padding: 2.5rem 1rem;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+.hero h1 {
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+}
+.hero .subtitle {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 @media (min-width: 1100px) {
   .hero {
     padding: 3rem 0;
     text-align: center;
+    min-height: 65vh;
   }
   .hero h1 {
     font-size: 3rem;

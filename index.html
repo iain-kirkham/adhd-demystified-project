@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body class="">
+    <!-- Navigation  -->
     <header class="site-header">
       <nav
         class="navbar navbar-expand-md fixed-top navbar-light bg-white shadow-sm"
@@ -68,6 +69,7 @@
     </header>
 
     <main id="main-content">
+      <!-- Hero section -->
       <section
         id="hero"
         class="hero d-flex flex-column container-fluid justify-content-center align-items-center text-center"
@@ -86,17 +88,17 @@
             aria-label="Primary calls to action"
           >
             <a
-              class="btn btn-lg fw-bold rounded-3 text-white bg-white bg-opacity-25 btn-cta"
+              class="btn btn-primary fw-bold rounded-3 text-white"
               href="#types"
               >Learn the types</a
             >
             <a
-              class="btn btn-lg fw-bold rounded-3 text-white bg-white bg-opacity-25 btn-cta"
+              class="btn btn-primary fw-bold rounded-3 text-white"
               href="#diagnosis"
               >Diagnosis guide</a
             >
             <a
-              class="btn btn-lg fw-bold rounded-3 text-white bg-white bg-opacity-25 btn-cta"
+              class="btn btn-primary fw-bold rounded-3 text-white"
               href="#resources"
               >Get resources</a
             >
@@ -104,6 +106,7 @@
         </div>
       </section>
 
+      <!-- Types section -->
       <section id="types" class="types container pt-4">
         <h2>ADHD types</h2>
         <p class="lede">Brief text about ADHD and how it's split into types</p>
@@ -547,6 +550,7 @@
         </div>
       </section>
 
+      <!-- Diagnosis section -->
       <section id="diagnosis" class="diagnosis container">
         <h2>Diagnosis</h2>
         <p class="">
@@ -554,217 +558,260 @@
         </p>
         <div class="card-row row gap-3 justify-content-center">
           <div class="col-12 col-md-4 col-lg-4">
-            <div class="card small-card text-center p-3">
-              <h3>Self-check</h3>
-              <p>
-                Quick screening questionnaire to help you decide next steps.
-              </p>
-              <p>
-                <a
-                  href="https://adhduk.co.uk/adult-adhd-screening-survey/"
-                  class="btn btn-primary btn-sm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Take the self-check</a
-                >
-              </p>
+            <div class="card small-card h-100">
+              <div class="card-body text-center p-3">
+                <h3 class="h5">Self-check</h3>
+                <p>
+                  Quick screening questionnaire to help you decide next steps.
+                </p>
+                <p>
+                  <a
+                    href="https://adhduk.co.uk/adult-adhd-screening-survey/"
+                    class="btn btn-primary btn-sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Take the self-check</a
+                  >
+                </p>
+              </div>
             </div>
           </div>
           <div class="col-12 col-md-4 col-lg-4">
-            <div class="card small-card text-center p-3">
-              <h3>Choose pathway</h3>
-              <p>
-                Compare NHS, private and self-managed options to pick what suits
-                you.
-              </p>
-              <p>
-                <a
-                  href="https://adhduk.co.uk/diagnosis-pathways/"
-                  class="btn btn-primary btn-sm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Choose a pathway</a
-                >
-              </p>
+            <div class="card small-card h-100">
+              <div class="card-body text-center p-3">
+                <h3 class="h5">Choose pathway</h3>
+                <p>
+                  Compare NHS, private and self-managed options to pick what
+                  suits you.
+                </p>
+                <p>
+                  <a
+                    href="https://adhduk.co.uk/diagnosis-pathways/"
+                    class="btn btn-primary btn-sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Choose a pathway</a
+                  >
+                </p>
+              </div>
             </div>
           </div>
           <div class="col-12 col-md-4 col-lg-4">
-            <div class="card small-card text-center p-3">
-              <h3>Get assessed</h3>
-              <p>Information about formal assessment and next steps.</p>
-              <p>
-                <a
-                  href="https://www.nhs.uk/conditions/attention-deficit-hyperactivity-disorder-adhd/"
-                  class="btn btn-primary btn-sm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Find assessment options</a
-                >
-              </p>
+            <div class="card small-card h-100">
+              <div class="card-body text-center p-3">
+                <h3 class="h5">Get assessed</h3>
+                <p>Information about formal assessment and next steps.</p>
+                <p>
+                  <a
+                    href="https://www.nhs.uk/conditions/adhd-adults/"
+                    class="btn btn-primary btn-sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Find assessment options</a
+                  >
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="resources" class="resources container">
-        <h2>Resources</h2>
-        <div class="accordion" id="resourcesAccordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="false"
-                aria-controls="collapseOne"
-              >
-                How to ADHD
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingOne"
-              data-bs-parent="#resourcesAccordion"
-            >
-              <div class="accordion-body">
-                How to ADHD is a popular YouTube channel by ADHDer Jessica
-                McCabe that provides educational and practical content about
-                ADHD.
-                <a href="https://howtoadhd.com/">How to ADHD website</a>
-                You can also buy her new book made by ADHDers for ADHDer's:
-                <a href="https://howtoadhdbook.com/">
-                  How to ADHD An Insider's Guide to Working with Your Brain (Not
-                  Against It)
-                </a>
-              </div>
-            </div>
+      <!-- Resources section -->
+      <section id="resources" class="container section">
+        <div class="row resources-accordion-parent">
+          <div class="col-12 text-center">
+            <h2>Resources</h2>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                ADHD UK
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#resourcesAccordion"
-            >
-              <div class="accordion-body">
-                ADHD UK is a leading charity dedicated to supporting individuals
-                with ADHD and their families in the United Kingdom. You can find
-                <a href="https://adhduk.co.uk/">ADHD UK website</a>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                ADDitude Magazine
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingThree"
-              data-bs-parent="#resourcesAccordion"
-            >
-              <div class="accordion-body">
-                ADDitude Magazine is a comprehensive resource for individuals
-                with ADHD and their families, offering expert advice and
-                practical tips on managing ADHD.
-                <a href="https://www.additudemag.com/"
-                  >Visit ADDitude Magazine</a
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="accordion accordion-flush">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    How to ADHD
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent=".resources-accordion-parent"
                 >
+                  <div class="accordion-body">
+                    How to ADHD is a popular YouTube channel by ADHDer Jessica
+                    McCabe that provides educational and practical content about
+                    ADHD.
+                    <a href="https://howtoadhd.com/">How to ADHD website</a>
+                    You can also buy her new book made by ADHDers for ADHDer's:
+                    <a href="https://howtoadhdbook.com/">
+                      How to ADHD An Insider's Guide to Working with Your Brain
+                      (Not Against It)
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFour"
-                aria-expanded="false"
-                aria-controls="collapseFour"
-              >
-                Info link 4
-              </button>
-            </h2>
-            <div
-              id="collapseFour"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingFour"
-              data-bs-parent="#resourcesAccordion"
-            >
-              <div class="accordion-body">
-                Short description and the link: <a href="#">Visit resource</a>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="accordion accordion-flush">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    ADHD UK
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent=".resources-accordion-parent"
+                >
+                  <div class="accordion-body">
+                    ADHD UK is a leading charity dedicated to supporting
+                    individuals with ADHD and their families in the United
+                    Kingdom. You can find
+                    <a href="https://adhduk.co.uk/">ADHD UK website</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFive">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFive"
-                aria-expanded="false"
-                aria-controls="collapseFive"
-              >
-                Info link 5
-              </button>
-            </h2>
-            <div
-              id="collapseFive"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingFive"
-              data-bs-parent="#resourcesAccordion"
-            >
-              <div class="accordion-body">
-                Short description and the link: <a href="#">Visit resource</a>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="accordion accordion-flush">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    ADDitude Magazine
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent=".resources-accordion-parent"
+                >
+                  <div class="accordion-body">
+                    ADDitude Magazine is a comprehensive resource for
+                    individuals with ADHD and their families, offering expert
+                    advice and practical tips on managing ADHD.
+                    <a href="https://www.additudemag.com/"
+                      >Visit ADDitude Magazine</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSix">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseSix"
-                aria-expanded="false"
-                aria-controls="collapseSix"
-              >
-                Info link 6
-              </button>
-            </h2>
-            <div
-              id="collapseSix"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingSix"
-              data-bs-parent="#resourcesAccordion"
-            >
-              <div class="accordion-body">
-                Short description and the link: <a href="#">Visit resource</a>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="accordion accordion-flush">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
+                    Info link 4
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent=".resources-accordion-parent"
+                >
+                  <div class="accordion-body">
+                    Short description and the link:
+                    <a href="#">Visit resource</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="accordion accordion-flush">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFive"
+                  >
+                    Info link 5
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent=".resources-accordion-parent"
+                >
+                  <div class="accordion-body">
+                    Short description and the link:
+                    <a href="#">Visit resource</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="accordion accordion-flush">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSix"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseSix"
+                  >
+                    Info link 6
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingSix"
+                  data-bs-parent=".resources-accordion-parent"
+                >
+                  <div class="accordion-body">
+                    Short description and the link:
+                    <a href="#">Visit resource</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
